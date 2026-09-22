@@ -1,0 +1,92 @@
+@media (max-width: 1000px) {
+
+  .dashboard-main {
+    padding: 25px !important;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .dashboard-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .dashboard-sidebar {
+    width: 190px !important;
+  }
+
+  .dashboard-main {
+    padding: 20px !important;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dashboard-features {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dashboard-main h1 {
+    font-size: 24px !important;
+  }
+
+  .ai-interview-hero {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+}
+@media (max-width: 500px) {
+
+  .dashboard-sidebar {
+    width: 160px !important;
+    padding: 20px 12px !important;
+  }
+
+  .dashboard-main {
+    padding: 15px !important;
+  }
+
+  .dashboard-main h1 {
+    font-size: 21px !important;
+  }
+
+  .dashboard-main p {
+    font-size: 13px;
+  }
+
+  .ai-interview-hero {
+    padding: 20px !important;
+  }
+
+}
+.dashboard-stats > div,
+.dashboard-features > div {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-stats > div:hover,
+.dashboard-features > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+.ai-interview-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.12) !important;
+}
+.dashboard-title {
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .dashboard-title {
+    letter-spacing: -0.3px;
+  }
+}
